@@ -1,2 +1,4 @@
 # WebDesigns
-Examples of web design work
+Examples of responsive web design work in HTML/CSS and a bit of jQuery.
+
+
