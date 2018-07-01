@@ -1,0 +1,350 @@
+
+
+
+/* self-clearing floats*/
+.work:after,
+    .section:after
+  
+   {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+
+.page {
+	width:90%;
+	font: normal 100% Arial;
+	margin: 28px auto;
+}
+
+
+ h1  {
+    font-family: 'Sketch Block','Cabin Sketch';
+    color:#735a50;
+    font-size: 5em;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+ 
+
+}
+
+
+@font-face {
+    font-family: 'Sketch Block';
+    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot');
+    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.woff') format('woff'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.ttf') format('truetype'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.svg#SketchBlockBold') format('svg');
+}
+
+
+
+.nav-primary {
+	font: normal 1.1em arial; 
+	text-align:left;
+	padding-bottom: 10px;
+
+
+
+}
+
+.nav-primary li{
+	display:inline-block;
+
+	
+
+}
+
+ul.nav li  {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 1px;
+    white-space: nowrap;
+    padding-left:1px;
+    padding-right:1px;
+    margin-bottom: 20px;
+
+}
+
+
+a {
+	border: white solid 2px; border-radius: 5px;
+	background-color: white;
+	text-decoration: none;
+	color: #534e4e;
+	padding: 0.4em 0.4em 0.2em;
+	margin: 2px;
+}
+
+a:hover {
+	color: #735a50;
+	border-radius:10%;
+}
+
+.nav li.active a {
+color: #534e4e;
+border-radius: 10%;
+border: solid 3px #735a50;
+}
+
+
+/*-----------------------CONTACT------------------------*/
+
+
+
+.contact .message {
+    position: relative;
+    margin-top: 50px;
+
+}
+
+
+.contact .message h2 {
+ 	line-height:1.6;
+ 	margin-bottom: 30px;
+ 	font-size: 1.5em;
+ 	color: #534e4e;
+}
+
+.contact span  {
+	color: #735a50;
+}
+
+.form p {
+    font-size: 1.3em;
+   	color: #534e4e;
+}
+
+.contact input {
+    height:30px;
+    font-size: 1.5em;
+    width: 50%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+
+}
+
+.submit input {
+    border: 2px solid #6b605c;
+    background-color: #6b605c;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+    color:white;
+    
+}
+
+
+
+
+#Comment {
+	font-size:1.5em;
+	width: 50%;
+	height: 150px;
+}
+
+
+
+
+
+/*--FOOTER---------------*/
+.footer {
+	text-align: center;
+	color:#534e4e;
+	font: normal 0.8em arial;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	clear:both;
+
+}
+
+.footer p {
+	color: #534e4e;
+	font-size: 1em;
+}
+
+.footer a {
+	background: none;
+	border: none;
+	border-bottom: 1px solid white;
+	color:#735a50;
+}
+
+/*-MEDIA QUERIES----------------------------------------------------------------------*/
+
+/*Disable iOS/WinMobile font size changes*/
+
+html {
+	font-size: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+/*1400++ is laptop and bigger--------------------------------------------------*/
+@media  (min-width: 87.5em) {
+.form p {
+    font-size: 1.3em; 
+}
+
+.contact input {
+    width: 40%;
+}
+.submit input {
+ 
+    width: 150px;
+  
+}
+
+#Comment {
+	font-size:1.5em;
+	width: 40%;
+	
+}
+
+}
+
+
+/*-MAX-WIDTH 360PX---------------TINY TINY-----------PURPLE------------------------------------*/
+@media screen and (max-width: 22.5em){
+
+h1 {
+	font-size:3.5em;
+	text-align:center;
+}
+
+.nav-primary {
+font: normal 0.9em arial; 
+text-align:center;
+width: 100%;
+
+}
+.contact .message h2 {
+ 	font-size: 1.2em;
+}
+
+
+
+.form p {
+    font-size: 1.3em; 
+}
+
+.contact input {
+    width: 90%;
+}
+
+.submit input {
+ 
+    width: 150px;
+  
+}
+
+#Comment {
+	font-size:1.5em;
+	width: 90%;
+	
+}
+}
+
+/*-MAX-WIDTH 480PX---------------NOT SURE---------------GREEN--------------------------------*/
+@media screen and (min-width: 22.506875em)  and (max-width: 30em){
+
+
+h1 {
+	font-size:3.5em;
+	text-align:center;
+}
+
+.nav-primary {
+font: normal 0.9em arial; 
+text-align:center;
+width: 100%;
+
+}
+.contact .message h2 {
+ 	font-size: 1.2em;
+}
+
+
+
+.form p {
+    font-size: 1.3em; 
+}
+
+.contact input {
+    width: 90%;
+}
+.submit input {
+ 
+    width: 150px;
+  
+}
+
+#Comment {
+	font-size:1.5em;
+	width: 90%;
+	
+}
+}
+
+/*-MAX-WIDTH 768PX---------------------------------PINK-----------------------------*/
+@media screen and (min-width: 30.006875em) and (max-width: 48em){
+.contact input {
+    width: 90%;
+}
+
+
+
+#Comment {
+	font-size:1.5em;
+	width: 90%;
+	
+}	
+.submit input {
+ 
+    width: 150px;
+  
+}
+
+}
+
+/*-MAX-WIDTH 900PX--------------------------------------------------------------*/
+@media screen and (min-width: 48.00625em) and (max-width: 56.25em){
+
+.contact input {
+    width: 70%;
+}
+
+
+
+#Comment {
+	font-size:1.5em;
+	width: 70%;
+	
+}	
+
+.submit input {
+ 
+    width: 150px;
+  
+}
+
+}
+

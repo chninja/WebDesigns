@@ -1,0 +1,562 @@
+
+
+
+/* self-clearing floats*/
+.gallery:after,
+    .section:after,
+  
+   {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+
+.page {
+	width:90%;
+	font: normal 100% Arial;
+	margin: 28px auto;
+}
+
+*,
+*:before,
+*:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+	box-sizing:         border-box;
+}
+
+ h1  {
+    font-family: 'Sketch Block','Cabin Sketch';
+    color:#735a50;
+    font-size: 5em;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+ 
+
+}
+
+
+@font-face {
+    font-family: 'Sketch Block';
+    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot');
+    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.woff') format('woff'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.ttf') format('truetype'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.svg#SketchBlockBold') format('svg');
+}
+
+
+
+.nav-primary {
+	font: normal 1.1em arial; 
+	text-align:left;
+	padding-bottom: 60px;
+
+
+
+}
+
+.nav-primary li{
+	display:inline-block;
+
+	
+
+}
+
+ul.nav li  {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 1px;
+    white-space: nowrap;
+    padding-left:1px;
+    padding-right:1px;
+    margin-bottom: 20px;
+
+}
+
+
+a {
+	
+	background-color: none;
+	text-decoration: none;
+	color: #534e4e;
+	padding: 0.4em 0.4em 0.2em;
+	margin: 2px;
+}
+
+a:hover {
+	color: #735a50;
+	border-radius:10%;
+}
+
+.nav li.active a {
+color: #534e4e;
+border-radius: 10%;
+border: solid 3px #735a50;
+}
+
+
+/*-----------------------WORK------------------------*/
+
+.gallery {
+	
+	width:100%;
+	margin: 30px auto;
+	padding-bottom: 100px;
+
+}
+
+.figure {
+	float:left;
+	width:40%;
+	height:30%;
+	margin: 0 3.317535545023696682% 1.5em 0;			/* 21px / 633px */
+	text-align: center;
+	
+}
+
+.figure img {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);;
+	display: block;
+	margin: 0 auto 1em;
+	width:90%;
+	height:90%;
+	text-align: center;
+	
+
+	
+}
+
+
+
+li#gnomes1 {
+	margin-left:8.2%;
+
+}
+
+li#gnomes2 {
+	margin-right:0;
+}
+
+
+
+.figure a 
+			{
+	width: 100%;
+	max-width: 500px;
+	float:left;
+	position:relative;
+
+
+}
+
+
+ h2 {
+ 	position: absolute;
+	top: 70px; 
+	left: 20px;
+	font-size: 2em;
+   	font-family:'Sketch Block','Cabin Sketch';
+   	color: #735a50;
+  	background-color: rgba(255,255,255,0.6);
+  	width: 70%;
+  	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+
+
+
+/*-MEDIA QUERIES----------------------------------------------------------------------*/
+
+/*Disable iOS/WinMobile font size changes*/
+
+html {
+	font-size: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+/* Blog style for: OMFHUGE*/
+/*1200++ is laptop and bigger--------------------------------------------------*/
+@media  (min-width: 75.0625em) {
+
+
+
+
+}
+
+/*1400++ is laptop and bigger--------------------------------------------------*/
+@media  (min-width: 87.5em) {
+h1 {
+	font-size: 6em;
+}
+
+.nav-primary {
+	margin-bottom: 50px;
+}
+
+#gnomes1 img,
+#gnomes2 img
+{
+	width: 500px;
+
+}
+
+h2 {
+	left:5px;
+	font-size: 3em;
+	width:100%;
+}
+
+}
+
+/*1800++ is laptop and bigger--------------------------------------------------*/
+@media  (min-width: 112.5em) {
+
+h1 {
+	font-size: 7em;
+}
+
+.nav-primary {
+	margin-bottom: 50px;
+}
+
+#gnomes1 img,
+#gnomes2 img
+{
+	width: 700px;
+
+}
+
+h2 {
+	left:5px;
+	font-size: 5em;
+	width:100%;
+}
+
+}
+
+
+/*-MAX-WIDTH 360PX---------------TINY TINY-----------PURPLE------------------------------------*/
+@media screen and (max-width: 22.5em){
+h1 {
+    font-size: 3.5em;
+    text-align:center;
+
+}
+
+.nav-primary {
+font: normal 0.9em arial; 
+text-align:center;
+width: 100%;
+
+}
+
+.gallery {
+
+	width:95%;
+	margin: 10px auto;
+
+}
+
+.figure {
+	float:none;
+	width:100%;
+	height:30%;
+	margin: 0 0% 1.5em 0;			/* 21px / 633px */
+	text-align: center;
+}
+
+.figure img {
+	
+	margin: 0 auto 1em;
+	width:90%;
+	height:90%;
+	text-align: center;
+}
+
+
+li#gnomes1 {
+	margin-left: 0%;
+
+}
+
+li#gnomes2 {
+	margin-right: 0;
+}
+
+#gnomes1 img,
+#gnomes2 img,
+#gnomes3 img {
+	
+
+}
+
+.figure a 
+			{
+	width: 100%;
+	max-width: 375px;
+	float:none;
+	margin: 0%;
+	display:inline-block;
+
+}
+
+
+ h2 {
+
+	font-size: 1.5em;
+  	width: 80%;
+  	left:22px;
+}
+
+}
+
+/*-MAX-WIDTH 480PX---------------NOT SURE---------------GREEN--------------------------------*/
+@media screen and (min-width: 22.506875em)  and (max-width: 30em){
+
+h1 {
+    font-size: 3.5em;
+    text-align:center;
+
+}
+
+.nav-primary {
+font: normal 0.9em arial; 
+text-align:center;
+width: 100%;
+
+}
+
+.gallery {
+
+	width:95%;
+	margin: 10px auto;
+
+}
+
+.figure {
+	float:none;
+	width:100%;
+	height:30%;
+	margin: 0 0% 1.5em 0;			/* 21px / 633px */
+	text-align: center;
+}
+
+.figure img {
+	
+	margin: 0 auto 1em;
+	width:90%;
+	height:90%;
+	text-align: center;
+}
+
+
+li#gnomes1 {
+	margin-left: 0%;
+
+}
+
+li#gnomes2 {
+	margin-right: 0;
+}
+
+#gnomes1 img,
+#gnomes2 img,
+#gnomes3 img {
+	
+
+}
+
+.figure a 
+			{
+	width: 100%;
+	max-width: 375px;
+	float:none;
+	margin: 0%;
+	display:inline-block;
+
+}
+
+
+ h2 {
+
+	font-size: 1.5em;
+  	width: 80%;
+  	left:22px;
+}
+
+}
+
+/*-MAX-WIDTH 768PX---------------------------------PINK-----------------------------*/
+@media screen and (min-width: 30.006875em) and (max-width: 48em){
+	/*----------HEADER------------------------------------------*/
+h1 {
+    
+    text-align:center;
+
+}
+
+.nav-primary {
+ 
+text-align:center;
+
+}
+
+.gallery {
+
+	width:95%;
+	margin: 10px auto;
+
+}
+
+.figure {
+	float:none;
+	width:100%;
+	height:30%;
+	margin: 0 0% 1.5em 0;			/* 21px / 633px */
+	text-align: center;
+}
+
+.figure img {
+	
+	margin: 0 auto 1em;
+	width:90%;
+	height:90%;
+	text-align: center;
+}
+
+
+li#gnomes1 {
+	margin-left: 0%;
+
+}
+
+li#gnomes2 {
+	margin-right: 0;
+}
+
+#gnomes1 img,
+#gnomes2 img,
+#gnomes3 img {
+	
+
+}
+
+.figure a 
+			{
+	width: 100%;
+	max-width: 375px;
+	float:none;
+	margin: 0%;
+	display:inline-block;
+
+}
+
+
+ h2 {
+
+	font-size: 1.5em;
+  	width: 80%;
+  	left:22px;
+}
+
+
+
+}
+
+/*-MAX-WIDTH 900PX--------------------------------------------------------------*/
+@media screen and (min-width: 48.00625em) and (max-width: 56.25em){
+.gallery {
+	
+	width:100%;
+	margin: 30px auto;
+	padding-bottom: 100px;
+
+}
+
+.figure {
+	float:left;
+	width:40%;
+	height:30%;
+	margin: 0 3.317535545023696682% 1.5em 0;			/* 21px / 633px */
+	text-align: center;
+	
+}
+
+.figure img {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);;
+	display: block;
+	margin: 0 auto 1em;
+	width:100%;
+	height:100%;
+	text-align: center;
+	
+
+	
+}
+
+
+
+li#gnomes1 {
+	margin-left:8.2%;
+
+}
+
+li#gnomes2 {
+	margin-right:0;
+}
+
+
+
+.figure a 
+			{
+	width: 100%;
+	max-width: 500px;
+	float:left;
+	position:relative;
+
+
+}
+
+
+ h2 {
+ 	
+	font-size: 2em;
+	left:7px;
+   	
+}
+
+
+
+
+}
+
+
